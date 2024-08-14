@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0;
+    background-color: rgb(0, 195, 255);
+}
+
+.medsos ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: rgb(0, 0, 0);
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: rgb(0, 95, 255);
+    color: white;
+}
+
+.active {
+    background-color:rgb(0, 95, 255);
+    color: white;
+}
+
+.gambar {
+    height: 70vh;
+    background-image: url(img/bacground.jpeg);
+    background-size: cover;
+    background-position:top ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 225, 255, 0);
+}
+
+section {
+    padding: 50px 0;
+}   
+
+.gambar h2 {
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid white;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+.about p{
+    color: black;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+
+.submenu {
+    background-color: rgb(0, 195, 255);
+    color: white;
+}
+
+.p {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.box {
+    color: rgb(0, 0, 0);
+}
+
+.box .col {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.box .col p{
+    padding: 20px 0;
+}
+
+.box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.box .col h4 {
+    margin: 20px 0;
+}
+.full-width {
+    width: 100%;
+}
+.section-map {
+    padding: 0;
+    margin: 0;
+}
+.section-map .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.service .icon {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service .col {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.service .col h4 {
+    font-size: 20px; 
+    color: #555; 
+}
+.about p {
+    margin-bottom: 1em; 
+    line-height: 1.6; 
+}
+.about .container {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 1em; 
+}
+.img img {
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        float: none;
+        text-align: center;
+    }
+
+    header ul {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header ul li {
+        display: block;
+        margin: 0;
+    }
+
+    header ul li a {
+        padding: 15px 10px;
+    }
+
+    .gambar {
+        height: 50vh; 
+    }
+
+    .box .col {
+        width: 100%; 
+        float: none; 
+    }
+
+    .section-map .container {
+        padding: 20px; 
+    }
+
+    .img img {
+        width: 100%; 
+        height: auto;
+    }
+
+    section {
+        padding: 30px 0; 
+    }
+
+    .about .container {
+        padding: 0.5em; 
+    }
+}
